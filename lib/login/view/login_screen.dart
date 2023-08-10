@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
-import 'package:jobfinder_figma_pro_v2/widgets/custom_checkbox_button.dart';
+import 'package:jobfinder_figma_pro_v2/login/widgets/login_checkbox.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_text_form_field.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 
@@ -17,7 +18,6 @@ class LoginScreen extends StatelessWidget {
 
   TextEditingController groupnineController = TextEditingController();
 
-  bool isCheckbox = false;
 
   @override
   Widget build(BuildContext context) {
@@ -120,8 +120,8 @@ class LoginScreen extends StatelessWidget {
                   right: 11,
                   bottom: 13,
                 ),
-                child: CustomImageView(
-                  svgPath: ImageConstant.imgCheckmark,
+                child: SvgPicture.asset(
+                  ImageConstant.imgCheckmark,
                 ),
               ),
               suffixConstraints: BoxConstraints(
@@ -139,19 +139,7 @@ class LoginScreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CustomCheckboxButton(
-                    text: "Remember me",
-                    iconSize: 24,
-                    value: isCheckbox,
-                    padding: EdgeInsets.only(
-                      top: 3,
-                      bottom: 3,
-                    ),
-                    textStyle: CustomTextStyles.bodySmallBluegray300,
-                    onChange: (value) {
-                      isCheckbox = value;
-                    },
-                  ),
+                  LoginCheckbox(),
                   Padding(
                     padding: EdgeInsets.only(
                       top: 5,

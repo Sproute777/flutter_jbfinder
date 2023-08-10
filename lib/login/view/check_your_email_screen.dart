@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 import 'package:jobfinder_figma_pro_v2/login/widgets/login_button.dart';
 
@@ -56,13 +57,10 @@ class CheckYourEmailScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            CustomImageView(
-              svgPath: ImageConstant.imgUndrawmessagesentreq2kl,
+            SvgPicture.asset(
+              ImageConstant.imgUndrawmessagesentreq2kl,
               height: 109,
               width: 125,
-              margin: EdgeInsets.only(
-                top: 48,
-              ),
             ),
            
 LoginButton(

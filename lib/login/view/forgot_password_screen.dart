@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 import 'package:jobfinder_figma_pro_v2/login/widgets/login_button.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_text_form_field.dart';
@@ -116,8 +117,8 @@ class ForgotPasswordScreen extends StatelessWidget {
                                   child: Stack(
                                     alignment: Alignment.centerRight,
                                     children: [
-                                      CustomImageView(
-                                        svgPath: ImageConstant.imgVector229,
+                                      SvgPicture.asset(
+                                         ImageConstant.imgVector229,
                                         height: getSize(
                                           22,
                                         ),
@@ -133,24 +134,15 @@ class ForgotPasswordScreen extends StatelessWidget {
                                               MainAxisAlignment.center,
                                           mainAxisSize: MainAxisSize.min,
                                           children: [
-                                            CustomImageView(
-                                              svgPath:
+                                            SvgPicture.asset(
                                                   ImageConstant.imgVector231,
                                               height: 4,
                                               width: 2,
-                                              margin: EdgeInsets.only(
-                                                top: 4,
-                                              ),
                                             ),
-                                            CustomImageView(
-                                              svgPath:
+                                            SvgPicture.asset(
                                                   ImageConstant.imgVector231,
                                               height: 4,
                                               width: 2,
-                                              margin: EdgeInsets.only(
-                                                left: 4,
-                                                bottom: 4,
-                                              ),
                                             ),
                                           ],
                                         ),
@@ -208,8 +200,8 @@ class ForgotPasswordScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    CustomImageView(
-                      svgPath: ImageConstant.imgQuestion,
+                    SvgPicture.asset(
+                      ImageConstant.imgQuestion,
                       height: 93,
                       width: 53,
                       alignment: Alignment.centerRight,
