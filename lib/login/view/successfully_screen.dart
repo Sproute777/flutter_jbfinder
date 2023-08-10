@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
-import 'package:jobfinder_figma_pro_v2/widgets/custom_elevated_button.dart';
+import 'package:jobfinder_figma_pro_v2/login/widgets/login_button.dart';
+import 'package:jobfinder_ui/jobfinder_ui.dart';
 
 class SuccessfullyScreen extends StatelessWidget {
   const SuccessfullyScreen({Key? key})
@@ -57,38 +58,11 @@ class SuccessfullyScreen extends StatelessWidget {
                 ),
               ),
               Spacer(),
-              CustomElevatedButton(
-                text: "Continue".toUpperCase(),
-                margin: EdgeInsets.only(
-                  left: 8,
-                  right: 8,
-                ),
-                buttonStyle: CustomButtonStyles.outlineIndigo2002d.copyWith(
-                    fixedSize: MaterialStateProperty.all<Size>(Size(
-                  double.maxFinite,
-                  
-                    50,
-                  
-                ))),
-                buttonTextStyle: theme.textTheme.titleSmall!,
-              ),
-              CustomElevatedButton(
-                text: "Back to Login".toUpperCase(),
-                margin: EdgeInsets.only(
-                  left: 8,
-                  top: 15,
-                  right: 8,
-                  bottom: 15,
-                ),
-                buttonStyle: CustomButtonStyles.fillPrimary.copyWith(
-                    fixedSize: MaterialStateProperty.all<Size>(Size(
-                  double.maxFinite,
-                  
-                    50,
-                  
-                ))),
-                buttonTextStyle: theme.textTheme.titleSmall!,
-              ),
+              LoginButton(text: "Continue".toUpperCase(), onPressed: () {}),
+              LoginButton(
+                  text: "Back to Login".toUpperCase(),
+                  loginButtonColors: LoginButtonColors.pink,
+                  onPressed: () {}),
               const Spacer()
             ],
           ),

@@ -15,6 +15,7 @@ class PrimaryColors {
   static const indigo2002d = Color(0X2D99AAC5);
   // Indigo
   static const indigo900 = Color(0XFF130160);
+  static const lightPink = Color(0XFFD6CDFE);
   // Orange
   static const orange100 = Color(0XFFFED5AD);
   static const orangeA200 = Color(0XFFFCA34D);

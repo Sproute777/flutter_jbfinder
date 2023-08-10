@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
+import 'package:jobfinder_ui/jobfinder_ui.dart';
 
 class AppNavigationScreen extends StatelessWidget {
   const AppNavigationScreen({Key? key}) : super(key: key);

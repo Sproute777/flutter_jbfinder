@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_floating_button.dart';
+import 'package:jobfinder_ui/jobfinder_ui.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key})
@@ -11,7 +12,6 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       backgroundColor: PrimaryColors.gray50,
       body: SafeArea(
@@ -50,11 +50,11 @@ class SplashScreen extends StatelessWidget {
                 text: TextSpan(
                   children: [
                     TextSpan(
-                      text: "Find Your  ",
+                      text: "Find Your ",
                       style: theme.textTheme.displayMedium,
                     ),
                     TextSpan(
-                      text: "Dream Job  Here!",
+                      text: "Dream Job Here!",
                       style: CustomTextStyles.displayMediumOrangeA200.copyWith(
                         decoration: TextDecoration.underline,
                       ),
@@ -65,7 +65,7 @@ class SplashScreen extends StatelessWidget {
               ),
               SizedBox(height: 15),
               Text(
-                "Explore all the most exciting job roles based on your interest and study major.",
+                "Explore all the most exciting job roles basedon your interest and study major.",
                 overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.left,
                 style: theme.textTheme.bodyMedium,

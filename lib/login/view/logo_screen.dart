@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
+import 'package:jobfinder_ui/jobfinder_ui.dart';
 
 class LogoScreen extends StatelessWidget {
   const LogoScreen({Key? key})

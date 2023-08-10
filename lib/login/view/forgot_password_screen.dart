@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
+import 'package:jobfinder_figma_pro_v2/login/widgets/login_button.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_elevated_button.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_text_form_field.dart';
+import 'package:jobfinder_ui/jobfinder_ui.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {
   ForgotPasswordScreen({Key? key})
@@ -13,7 +15,6 @@ class ForgotPasswordScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       backgroundColor: PrimaryColors.gray50,
       resizeToAvoidBottomInset: false,
@@ -71,12 +72,8 @@ class ForgotPasswordScreen extends StatelessWidget {
                           borderRadius: BorderRadiusStyle.circleBorder41,
                         ),
                         child: Container(
-                          height: getSize(
-                            82,
-                          ),
-                          width: getSize(
-                            82,
-                          ),
+                          height: 82,
+                          width: 82,
                           padding: EdgeInsets.only(
                             left: 19,
                             top: 23,
@@ -100,9 +97,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                                   ),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(
-                                      
-                                        12,
-                                      
+                                      12,
                                     ),
                                     border: Border.all(
                                       color: PrimaryColors.whiteA700,
@@ -189,8 +184,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: theme.colorScheme.primaryContainer,
                             borderRadius: BorderRadius.circular(
-                              (21
-                              ),
+                              (21),
                             ),
                           ),
                         ),
@@ -266,21 +260,8 @@ class ForgotPasswordScreen extends StatelessWidget {
                 disabledBorderDecoration:
                     TextFormFieldStyleHelper.outlineIndigo2002dTL6,
               ),
-              CustomElevatedButton(
-                text: "Reset Password".toUpperCase(),
-                margin: EdgeInsets.only(
-                  left: 9,
-                  top: 29,
-                  right: 9,
-                ),
-                buttonStyle: CustomButtonStyles.outlineIndigo2002d.copyWith(
-                    fixedSize: MaterialStateProperty.all<Size>(Size(
-                  double.maxFinite,
-                  
-                  50,
-                ))),
-                buttonTextStyle: theme.textTheme.titleSmall!,
-              ),
+              LoginButton(
+                  text: "Reset Password".toUpperCase(), onPressed: () {}),
               CustomElevatedButton(
                 text: "Back to Login".toUpperCase(),
                 margin: EdgeInsets.only(
@@ -292,7 +273,6 @@ class ForgotPasswordScreen extends StatelessWidget {
                 buttonStyle: CustomButtonStyles.fillPrimary.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  
                   50,
                 ))),
                 buttonTextStyle: theme.textTheme.titleSmall!,

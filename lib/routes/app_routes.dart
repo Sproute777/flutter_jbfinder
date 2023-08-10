@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:jobfinder_figma_pro_v2/presentation/logo_screen/logo_screen.dart';
-import 'package:jobfinder_figma_pro_v2/presentation/splash_screen/splash_screen.dart';
-import 'package:jobfinder_figma_pro_v2/presentation/login_screen/login_screen.dart';
-import 'package:jobfinder_figma_pro_v2/presentation/sign_up_screen/sign_up_screen.dart';
-import 'package:jobfinder_figma_pro_v2/presentation/forgot_password_screen/forgot_password_screen.dart';
-import 'package:jobfinder_figma_pro_v2/presentation/check_your_email_screen/check_your_email_screen.dart';
-import 'package:jobfinder_figma_pro_v2/presentation/successfully_screen/successfully_screen.dart';
+import 'package:jobfinder_figma_pro_v2/login/view/logo_screen.dart';
+import 'package:jobfinder_figma_pro_v2/login/view/splash_screen.dart';
+import 'package:jobfinder_figma_pro_v2/login/view/login_screen.dart';
+import 'package:jobfinder_figma_pro_v2/login/view/sign_up_screen.dart';
+import 'package:jobfinder_figma_pro_v2/login/view/forgot_password_screen.dart';
+import 'package:jobfinder_figma_pro_v2/login/view/check_your_email_screen.dart';
+import 'package:jobfinder_figma_pro_v2/login/view/successfully_screen.dart';
 import 'package:jobfinder_figma_pro_v2/presentation/app_navigation_screen/app_navigation_screen.dart';
 
 class AppRoutes {
