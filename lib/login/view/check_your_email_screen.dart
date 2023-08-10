@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
-import 'package:jobfinder_figma_pro_v2/widgets/custom_elevated_button.dart';
+import 'package:jobfinder_figma_pro_v2/login/widgets/login_button.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 
 class CheckYourEmailScreen extends StatelessWidget {
@@ -64,31 +64,17 @@ class CheckYourEmailScreen extends StatelessWidget {
                   top: 48,
                 ),
               ),
-              CustomElevatedButton(
+             
+LoginButton(
+                  loginButtonColors: LoginButtonColors.pink, 
+
                 text: "Open Your Email".toUpperCase(),
-                margin: EdgeInsets.only(
-                  top: 94,
-                ),
-                buttonStyle: CustomButtonStyles.outlineIndigo2002d.copyWith(
-                    fixedSize: MaterialStateProperty.all<Size>(Size(
-                  double.maxFinite,
-                  50)),
-                ),
-                buttonTextStyle: theme.textTheme.titleSmall!,
-              ),
-              CustomElevatedButton(
+                  onPressed: () {}),
+              LoginButton(
+                  loginButtonColors: LoginButtonColors.pink, 
                 text: "Back to Login".toUpperCase(),
-                margin: EdgeInsets.only(
-                  top: 15,
-                ),
-                buttonStyle: CustomButtonStyles.fillPrimary.copyWith(
-                    fixedSize: MaterialStateProperty.all<Size>(Size(
-                  double.maxFinite,
-                      50),
-                  ),
-                ),
-                buttonTextStyle: theme.textTheme.titleSmall!,
-              ),
+                  onPressed: () {}),
+              
               Padding(
                 padding: EdgeInsets.only(
                   top: 31,

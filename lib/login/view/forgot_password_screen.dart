@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 import 'package:jobfinder_figma_pro_v2/login/widgets/login_button.dart';
-import 'package:jobfinder_figma_pro_v2/widgets/custom_elevated_button.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_text_form_field.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 
@@ -262,21 +261,13 @@ class ForgotPasswordScreen extends StatelessWidget {
               ),
               LoginButton(
                   text: "Reset Password".toUpperCase(), onPressed: () {}),
-              CustomElevatedButton(
+                  
+              LoginButton(
+                    
                 text: "Back to Login".toUpperCase(),
-                margin: EdgeInsets.only(
-                  left: 9,
-                  top: 29,
-                  right: 9,
-                  bottom: 5,
-                ),
-                buttonStyle: CustomButtonStyles.fillPrimary.copyWith(
-                    fixedSize: MaterialStateProperty.all<Size>(Size(
-                  double.maxFinite,
-                  50,
-                ))),
-                buttonTextStyle: theme.textTheme.titleSmall!,
-              ),
+                  loginButtonColors: LoginButtonColors.pink,
+                  onPressed: () {}),
+              
             ],
           ),
         ),

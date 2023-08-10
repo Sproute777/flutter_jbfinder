@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_checkbox_button.dart';
-import 'package:jobfinder_figma_pro_v2/widgets/custom_elevated_button.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_text_form_field.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 

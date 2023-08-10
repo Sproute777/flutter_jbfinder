@@ -4,30 +4,30 @@ import 'package:flutter/material.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 
 /// A class that offers pre-defined button styles for customizing button appearance.
-class CustomButtonStyles {
-  // Filled button style
-  static ButtonStyle get fillPrimary => ElevatedButton.styleFrom(
-        backgroundColor: theme.colorScheme.primary,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(
-            6,
-          ),
-        ),
-      );
-  // Outline button style
-  static ButtonStyle get outlineIndigo2002d => ElevatedButton.styleFrom(
-        backgroundColor: PrimaryColors.indigo900,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(
-            6,
-          ),
-        ),
-        shadowColor: PrimaryColors.indigo2002d,
-        elevation: 4,
-      );
-  // text button style
-  static ButtonStyle get none => ButtonStyle(
-        backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),
-        elevation: MaterialStateProperty.all<double>(0),
-      );
-}
+// class CustomButtonStyles {
+//   // Filled button style
+//   static ButtonStyle get fillPrimary => ElevatedButton.styleFrom(
+//         backgroundColor: theme.colorScheme.primary,
+//         shape: RoundedRectangleBorder(
+//           borderRadius: BorderRadius.circular(
+//             6,
+//           ),
+//         ),
+//       );
+//   // Outline button style
+//   static ButtonStyle get outlineIndigo2002d => ElevatedButton.styleFrom(
+//         backgroundColor: PrimaryColors.indigo900,
+//         shape: RoundedRectangleBorder(
+//           borderRadius: BorderRadius.circular(
+//             6,
+//           ),
+//         ),
+//         shadowColor: PrimaryColors.indigo2002d,
+//         elevation: 4,
+//       );
+//   // text button style
+//   static ButtonStyle get none => ButtonStyle(
+//         backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),
+//         elevation: MaterialStateProperty.all<double>(0),
+//       );
+// }
