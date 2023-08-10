@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 
-import '../../app/widgets/scroll_scaffold.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key})

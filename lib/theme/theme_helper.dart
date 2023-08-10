@@ -1,7 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
-import '../../core/app_export.dart';
+
+import '../core/utils/size_utils.dart';
 
 String _PrimaryColors = "primary";
 

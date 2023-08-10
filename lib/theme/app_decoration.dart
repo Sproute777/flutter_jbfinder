@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
+
+import '../core/utils/size_utils.dart';
+import 'theme_helper.dart';
 
 class AppDecoration {
   static BoxDecoration get fill => BoxDecoration(

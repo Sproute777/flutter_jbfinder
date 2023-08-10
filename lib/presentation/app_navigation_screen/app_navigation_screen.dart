@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
+
+import '../../core/utils/size_utils.dart';
+import '../../routes/app_routes.dart';
+import '../../theme/app_decoration.dart';
+import '../../theme/theme_helper.dart';
 
 class AppNavigationScreen extends StatelessWidget {
   const AppNavigationScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    mediaQueryData = MediaQuery.of(context);
     return SafeArea(
         child: Scaffold(
         backgroundColor: PrimaryColors.whiteA700,
