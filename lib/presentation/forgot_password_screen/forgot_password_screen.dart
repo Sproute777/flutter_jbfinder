@@ -9,19 +9,18 @@ class ForgotPasswordScreen extends StatelessWidget {
           key: key,
         );
 
-  TextEditingController emailoneController = TextEditingController();
+  // TextEditingController emailoneController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    mediaQueryData = MediaQuery.of(context);
 
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: appTheme.gray50,
-        resizeToAvoidBottomInset: false,
-        body: Container(
+    return Scaffold(
+      backgroundColor: appTheme.gray50,
+      resizeToAvoidBottomInset: false,
+      body: SafeArea(
+        child: Container(
           width: double.maxFinite,
-          padding: getPadding(
+          padding: EdgeInsets.only(
             left: 20,
             top: 92,
             right: 20,
@@ -36,10 +35,8 @@ class ForgotPasswordScreen extends StatelessWidget {
                 style: theme.textTheme.headlineLarge,
               ),
               Container(
-                width: getHorizontalSize(
-                  301,
-                ),
-                margin: getMargin(
+                width: 301,
+                margin: EdgeInsets.only(
                   left: 17,
                   top: 9,
                   right: 16,
@@ -53,13 +50,9 @@ class ForgotPasswordScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                height: getVerticalSize(
-                  93,
-                ),
-                width: getHorizontalSize(
-                  118,
-                ),
-                margin: getMargin(
+                height: 93,
+                width: 118,
+                margin: EdgeInsets.only(
                   top: 53,
                 ),
                 child: Stack(
@@ -70,7 +63,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                       child: Card(
                         clipBehavior: Clip.antiAlias,
                         elevation: 0,
-                        margin: getMargin(
+                        margin: EdgeInsets.only(
                           left: 13,
                         ),
                         color: appTheme.indigo900,
@@ -84,7 +77,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                           width: getSize(
                             82,
                           ),
-                          padding: getPadding(
+                          padding: EdgeInsets.only(
                             left: 19,
                             top: 23,
                             right: 19,
@@ -107,15 +100,13 @@ class ForgotPasswordScreen extends StatelessWidget {
                                   ),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(
-                                      getHorizontalSize(
+                                      
                                         12,
-                                      ),
+                                      
                                     ),
                                     border: Border.all(
                                       color: appTheme.whiteA700,
-                                      width: getHorizontalSize(
-                                        5,
-                                      ),
+                                      width: 5,
                                     ),
                                   ),
                                 ),
@@ -152,26 +143,18 @@ class ForgotPasswordScreen extends StatelessWidget {
                                             CustomImageView(
                                               svgPath:
                                                   ImageConstant.imgVector231,
-                                              height: getVerticalSize(
-                                                4,
-                                              ),
-                                              width: getHorizontalSize(
-                                                2,
-                                              ),
-                                              margin: getMargin(
+                                              height: 4,
+                                              width: 2,
+                                              margin: EdgeInsets.only(
                                                 top: 4,
                                               ),
                                             ),
                                             CustomImageView(
                                               svgPath:
                                                   ImageConstant.imgVector231,
-                                              height: getVerticalSize(
-                                                4,
-                                              ),
-                                              width: getHorizontalSize(
-                                                2,
-                                              ),
-                                              margin: getMargin(
+                                              height: 4,
+                                              width: 2,
+                                              margin: EdgeInsets.only(
                                                 left: 4,
                                                 bottom: 4,
                                               ),
@@ -199,15 +182,14 @@ class ForgotPasswordScreen extends StatelessWidget {
                           width: getSize(
                             42,
                           ),
-                          margin: getMargin(
+                          margin: EdgeInsets.only(
                             left: 5,
                             top: 3,
                           ),
                           decoration: BoxDecoration(
                             color: theme.colorScheme.primaryContainer,
                             borderRadius: BorderRadius.circular(
-                              getHorizontalSize(
-                                21,
+                              (21
                               ),
                             ),
                           ),
@@ -217,7 +199,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                     Align(
                       alignment: Alignment.topLeft,
                       child: Container(
-                        padding: getPadding(
+                        padding: EdgeInsets.only(
                           left: 16,
                           top: 6,
                           right: 16,
@@ -236,12 +218,8 @@ class ForgotPasswordScreen extends StatelessWidget {
                     ),
                     CustomImageView(
                       svgPath: ImageConstant.imgQuestion,
-                      height: getVerticalSize(
-                        93,
-                      ),
-                      width: getHorizontalSize(
-                        53,
-                      ),
+                      height: 93,
+                      width: 53,
                       alignment: Alignment.centerRight,
                     ),
                   ],
@@ -250,7 +228,7 @@ class ForgotPasswordScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
-                  padding: getPadding(
+                  padding: EdgeInsets.only(
                     top: 71,
                   ),
                   child: Text(
@@ -262,13 +240,13 @@ class ForgotPasswordScreen extends StatelessWidget {
                 ),
               ),
               CustomTextFormField(
-                controller: emailoneController,
-                margin: getMargin(
+                // controller: emailoneController,
+                margin: EdgeInsets.only(
                   left: 9,
                   top: 10,
                   right: 9,
                 ),
-                contentPadding: getPadding(
+                contentPadding: EdgeInsets.only(
                   left: 16,
                   top: 17,
                   right: 16,
@@ -290,7 +268,7 @@ class ForgotPasswordScreen extends StatelessWidget {
               ),
               CustomElevatedButton(
                 text: "Reset Password".toUpperCase(),
-                margin: getMargin(
+                margin: EdgeInsets.only(
                   left: 9,
                   top: 29,
                   right: 9,
@@ -298,15 +276,14 @@ class ForgotPasswordScreen extends StatelessWidget {
                 buttonStyle: CustomButtonStyles.outlineIndigo2002d.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  getVerticalSize(
-                    50,
-                  ),
+                  
+                  50,
                 ))),
                 buttonTextStyle: theme.textTheme.titleSmall!,
               ),
               CustomElevatedButton(
                 text: "Back to Login".toUpperCase(),
-                margin: getMargin(
+                margin: EdgeInsets.only(
                   left: 9,
                   top: 29,
                   right: 9,
@@ -315,9 +292,8 @@ class ForgotPasswordScreen extends StatelessWidget {
                 buttonStyle: CustomButtonStyles.fillPrimary.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  getVerticalSize(
-                    50,
-                  ),
+                  
+                  50,
                 ))),
                 buttonTextStyle: theme.textTheme.titleSmall!,
               ),

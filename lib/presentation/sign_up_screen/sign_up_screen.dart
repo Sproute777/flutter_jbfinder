@@ -5,22 +5,18 @@ import 'package:jobfinder_figma_pro_v2/widgets/custom_elevated_button.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_text_form_field.dart';
 
 class SignUpScreen extends StatelessWidget {
-  SignUpScreen({Key? key})
-      : super(
-          key: key,
-        );
+  SignUpScreen({super.key});
 
-  TextEditingController fullnameoneController = TextEditingController();
+  // TextEditingController fullnameoneController = TextEditingController();
 
-  TextEditingController emailoneController = TextEditingController();
+  // TextEditingController emailoneController = TextEditingController();
 
-  TextEditingController groupthreeController = TextEditingController();
+  // TextEditingController groupthreeController = TextEditingController();
 
   bool isCheckbox = false;
 
   @override
   Widget build(BuildContext context) {
-    mediaQueryData = MediaQuery.of(context);
 
     return SafeArea(
       child: Scaffold(
@@ -28,7 +24,7 @@ class SignUpScreen extends StatelessWidget {
         resizeToAvoidBottomInset: false,
         body: Container(
           width: double.maxFinite,
-          padding: getPadding(
+          padding: EdgeInsets.only(
             left: 28,
             right: 28,
           ),
@@ -36,7 +32,7 @@ class SignUpScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
-                padding: getPadding(
+                padding: EdgeInsets.only(
                   top: 12,
                 ),
                 child: Text(
@@ -47,10 +43,8 @@ class SignUpScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                width: getHorizontalSize(
-                  285,
-                ),
-                margin: getMargin(
+                width: 285,
+                margin: EdgeInsets.only(
                   left: 16,
                   top: 12,
                   right: 16,
@@ -66,7 +60,7 @@ class SignUpScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
-                  padding: getPadding(
+                  padding: EdgeInsets.only(
                     left: 1,
                     top: 62,
                   ),
@@ -79,11 +73,11 @@ class SignUpScreen extends StatelessWidget {
                 ),
               ),
               CustomTextFormField(
-                controller: fullnameoneController,
-                margin: getMargin(
+                // controller: fullnameoneController,
+                margin: EdgeInsets.only(
                   top: 10,
                 ),
-                contentPadding: getPadding(
+                contentPadding: EdgeInsets.only(
                   left: 25,
                   top: 17,
                   right: 25,
@@ -99,7 +93,7 @@ class SignUpScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
-                  padding: getPadding(
+                  padding: EdgeInsets.only(
                     left: 2,
                     top: 13,
                   ),
@@ -112,11 +106,11 @@ class SignUpScreen extends StatelessWidget {
                 ),
               ),
               CustomTextFormField(
-                controller: emailoneController,
-                margin: getMargin(
+                // controller: emailoneController,
+                margin: EdgeInsets.only(
                   top: 10,
                 ),
-                contentPadding: getPadding(
+                contentPadding: EdgeInsets.only(
                   left: 15,
                   top: 17,
                   right: 15,
@@ -132,7 +126,7 @@ class SignUpScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
-                  padding: getPadding(
+                  padding: EdgeInsets.only(
                     left: 2,
                     top: 14,
                   ),
@@ -145,12 +139,12 @@ class SignUpScreen extends StatelessWidget {
                 ),
               ),
               CustomTextFormField(
-                controller: groupthreeController,
-                margin: getMargin(
+                // controller: groupthreeController,
+                margin: EdgeInsets.only(
                   top: 10,
                 ),
                 suffix: Container(
-                  margin: getMargin(
+                  margin: EdgeInsets.only(
                     left: 30,
                     top: 13,
                     right: 22,
@@ -161,16 +155,14 @@ class SignUpScreen extends StatelessWidget {
                   ),
                 ),
                 suffixConstraints: BoxConstraints(
-                  maxHeight: getVerticalSize(
-                    50,
-                  ),
+                  maxHeight: 50,
                 ),
                 obscureText: true,
                 filled: true,
                 fillColor: appTheme.whiteA700,
               ),
               Padding(
-                padding: getPadding(
+                padding: EdgeInsets.only(
                   left: 1,
                   top: 20,
                   right: 3,
@@ -180,11 +172,9 @@ class SignUpScreen extends StatelessWidget {
                   children: [
                     CustomCheckboxButton(
                       text: "Remember me",
-                      iconSize: getHorizontalSize(
-                        24,
-                      ),
+                      iconSize: 24,
                       value: isCheckbox,
-                      padding: getPadding(
+                      padding: EdgeInsets.only(
                         top: 3,
                         bottom: 3,
                       ),
@@ -194,7 +184,7 @@ class SignUpScreen extends StatelessWidget {
                       },
                     ),
                     Padding(
-                      padding: getPadding(
+                      padding: EdgeInsets.only(
                         top: 5,
                         bottom: 2,
                       ),
@@ -210,7 +200,7 @@ class SignUpScreen extends StatelessWidget {
               ),
               CustomElevatedButton(
                 text: "Sign up".toUpperCase(),
-                margin: getMargin(
+                margin: EdgeInsets.only(
                   left: 26,
                   top: 20,
                   right: 27,
@@ -218,44 +208,40 @@ class SignUpScreen extends StatelessWidget {
                 buttonStyle: CustomButtonStyles.outlineIndigo2002d.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  getVerticalSize(
+                  
                     50,
-                  ),
+                  
                 ))),
                 buttonTextStyle: theme.textTheme.titleSmall!,
               ),
               CustomElevatedButton(
                 text: "Sign up with Google".toUpperCase(),
-                margin: getMargin(
+                margin: EdgeInsets.only(
                   left: 27,
                   top: 15,
                   right: 28,
                 ),
                 leftIcon: Container(
-                  margin: getMargin(
+                  margin: EdgeInsets.only(
                     right: 10,
                   ),
                   child: CustomImageView(
                     imagePath: ImageConstant.imgGoogle220x15,
-                    height: getVerticalSize(
-                      20,
-                    ),
-                    width: getHorizontalSize(
-                      15,
-                    ),
+                    height: 20,
+                    width: 15,
                   ),
                 ),
                 buttonStyle: CustomButtonStyles.fillPrimary.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  getVerticalSize(
+                  
                     50,
-                  ),
+                  
                 ))),
                 buttonTextStyle: theme.textTheme.titleSmall!,
               ),
               Padding(
-                padding: getPadding(
+                padding: EdgeInsets.only(
                   top: 16,
                 ),
                 child: RichText(

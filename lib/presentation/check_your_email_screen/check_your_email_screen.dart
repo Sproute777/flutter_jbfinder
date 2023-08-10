@@ -17,7 +17,7 @@ class CheckYourEmailScreen extends StatelessWidget {
         backgroundColor: appTheme.gray50,
         body: Container(
           width: double.maxFinite,
-          padding: getPadding(
+          padding: EdgeInsets.only(
             left: 28,
             top: 91,
             right: 28,
@@ -32,10 +32,8 @@ class CheckYourEmailScreen extends StatelessWidget {
                 style: theme.textTheme.headlineLarge,
               ),
               Container(
-                width: getHorizontalSize(
-                  301,
-                ),
-                margin: getMargin(
+                width: 301,
+                margin: EdgeInsets.only(
                   left: 9,
                   top: 8,
                   right: 8,
@@ -59,46 +57,41 @@ class CheckYourEmailScreen extends StatelessWidget {
               ),
               CustomImageView(
                 svgPath: ImageConstant.imgUndrawmessagesentreq2kl,
-                height: getVerticalSize(
-                  109,
-                ),
-                width: getHorizontalSize(
-                  125,
-                ),
-                margin: getMargin(
+                height: 109,
+                width: 125,
+                margin: EdgeInsets.only(
                   top: 48,
                 ),
               ),
               CustomElevatedButton(
                 text: "Open Your Email".toUpperCase(),
-                margin: getMargin(
+                margin: EdgeInsets.only(
                   top: 94,
                 ),
                 buttonStyle: CustomButtonStyles.outlineIndigo2002d.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  getVerticalSize(
-                    50,
-                  ),
+                  
+                  50,
                 ))),
                 buttonTextStyle: theme.textTheme.titleSmall!,
               ),
               CustomElevatedButton(
                 text: "Back to Login".toUpperCase(),
-                margin: getMargin(
+                margin: EdgeInsets.only(
                   top: 15,
                 ),
                 buttonStyle: CustomButtonStyles.fillPrimary.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  getVerticalSize(
+                  
                     50,
-                  ),
+                  
                 ))),
                 buttonTextStyle: theme.textTheme.titleSmall!,
               ),
               Padding(
-                padding: getPadding(
+                padding: EdgeInsets.only(
                   top: 31,
                   bottom: 5,
                 ),

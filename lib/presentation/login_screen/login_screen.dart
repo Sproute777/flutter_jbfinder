@@ -18,15 +18,14 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    mediaQueryData = MediaQuery.of(context);
 
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
         backgroundColor: appTheme.whiteA700,
-        resizeToAvoidBottomInset: false,
-        body: Container(
+      body: SafeArea(
+        child: Container(
           width: double.maxFinite,
-          padding: getPadding(
+          padding: EdgeInsets.only(
             left: 21,
             top: 101,
             right: 21,
@@ -41,10 +40,8 @@ class LoginScreen extends StatelessWidget {
                 style: theme.textTheme.headlineLarge,
               ),
               Container(
-                width: getHorizontalSize(
-                  285,
-                ),
-                margin: getMargin(
+                width: 285,
+                margin: EdgeInsets.only(
                   left: 23,
                   top: 12,
                   right: 23,
@@ -60,7 +57,7 @@ class LoginScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
-                  padding: getPadding(
+                  padding: EdgeInsets.only(
                     left: 11,
                     top: 62,
                   ),
@@ -74,12 +71,12 @@ class LoginScreen extends StatelessWidget {
               ),
               CustomTextFormField(
                 controller: emailoneController,
-                margin: getMargin(
+                margin: EdgeInsets.only(
                   left: 8,
                   top: 10,
                   right: 8,
                 ),
-                contentPadding: getPadding(
+                contentPadding: EdgeInsets.only(
                   left: 16,
                   top: 17,
                   right: 16,
@@ -95,7 +92,7 @@ class LoginScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
-                  padding: getPadding(
+                  padding: EdgeInsets.only(
                     left: 11,
                     top: 14,
                   ),
@@ -109,13 +106,13 @@ class LoginScreen extends StatelessWidget {
               ),
               CustomTextFormField(
                 controller: groupnineController,
-                margin: getMargin(
+                margin: EdgeInsets.only(
                   left: 8,
                   top: 9,
                   right: 8,
                 ),
                 suffix: Container(
-                  margin: getMargin(
+                  margin: EdgeInsets.only(
                     left: 30,
                     top: 13,
                     right: 11,
@@ -126,16 +123,14 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 suffixConstraints: BoxConstraints(
-                  maxHeight: getVerticalSize(
-                    50,
-                  ),
+                  maxHeight: 50,
                 ),
                 obscureText: true,
                 filled: true,
                 fillColor: appTheme.whiteA700,
               ),
               Padding(
-                padding: getPadding(
+                padding: EdgeInsets.only(
                   left: 11,
                   top: 20,
                 ),
@@ -144,11 +139,9 @@ class LoginScreen extends StatelessWidget {
                   children: [
                     CustomCheckboxButton(
                       text: "Remember me",
-                      iconSize: getHorizontalSize(
-                        24,
-                      ),
+                      iconSize: 24,
                       value: isCheckbox,
-                      padding: getPadding(
+                      padding: EdgeInsets.only(
                         top: 3,
                         bottom: 3,
                       ),
@@ -158,7 +151,7 @@ class LoginScreen extends StatelessWidget {
                       },
                     ),
                     Padding(
-                      padding: getPadding(
+                      padding: EdgeInsets.only(
                         top: 5,
                         bottom: 2,
                       ),
@@ -174,7 +167,7 @@ class LoginScreen extends StatelessWidget {
               ),
               CustomElevatedButton(
                 text: "Login".toUpperCase(),
-                margin: getMargin(
+                margin: EdgeInsets.only(
                   left: 36,
                   top: 32,
                   right: 31,
@@ -182,21 +175,21 @@ class LoginScreen extends StatelessWidget {
                 buttonStyle: CustomButtonStyles.outlineIndigo2002d.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  getVerticalSize(
+                  
                     50,
-                  ),
+                  
                 ))),
                 buttonTextStyle: theme.textTheme.titleSmall!,
               ),
               CustomElevatedButton(
                 text: "Sign in with Google".toUpperCase(),
-                margin: getMargin(
+                margin: EdgeInsets.only(
                   left: 38,
                   top: 19,
                   right: 31,
                 ),
                 leftIcon: Container(
-                  margin: getMargin(
+                  margin: EdgeInsets.only(
                     right: 11,
                   ),
                   decoration: BoxDecoration(
@@ -208,9 +201,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   child: CustomImageView(
                     imagePath: ImageConstant.imgGoogle2,
-                    height: getVerticalSize(
-                      20,
-                    ),
+                    height: 20,
                     width: getHorizontalSize(
                       15,
                     ),
@@ -219,14 +210,12 @@ class LoginScreen extends StatelessWidget {
                 buttonStyle: CustomButtonStyles.fillPrimary.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  getVerticalSize(
-                    50,
-                  ),
+                  50,
                 ))),
                 buttonTextStyle: CustomTextStyles.titleSmallIndigo900,
               ),
               Padding(
-                padding: getPadding(
+                padding: EdgeInsets.only(
                   top: 16,
                   bottom: 5,
                 ),

@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       title: 'jobfinder_figma_pro_v2',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.logoScreen,
+      initialRoute: AppRoutes.appNavigationScreen,
       routes: AppRoutes.routes,
     );
   }

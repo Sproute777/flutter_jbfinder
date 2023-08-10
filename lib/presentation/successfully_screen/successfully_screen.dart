@@ -17,7 +17,7 @@ class SuccessfullyScreen extends StatelessWidget {
         backgroundColor: appTheme.gray50,
         body: Container(
           width: double.maxFinite,
-          padding: getPadding(
+          padding: EdgeInsets.only(
             left: 20,
             top: 96,
             right: 20,
@@ -34,10 +34,8 @@ class SuccessfullyScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: Container(
-                  width: getHorizontalSize(
-                    298,
-                  ),
-                  margin: getMargin(
+                  width: 298,
+                  margin: EdgeInsets.only(
                     left: 35,
                     top: 2,
                   ),
@@ -52,35 +50,31 @@ class SuccessfullyScreen extends StatelessWidget {
               ),
               CustomImageView(
                 svgPath: ImageConstant.imgUndrawmessagesentreq2klIndigo900,
-                height: getVerticalSize(
-                  117,
-                ),
-                width: getHorizontalSize(
-                  139,
-                ),
-                margin: getMargin(
+                height: 117,
+                width: 139,
+                margin: EdgeInsets.only(
                   top: 50,
                 ),
               ),
               Spacer(),
               CustomElevatedButton(
                 text: "Continue".toUpperCase(),
-                margin: getMargin(
+                margin: EdgeInsets.only(
                   left: 8,
                   right: 8,
                 ),
                 buttonStyle: CustomButtonStyles.outlineIndigo2002d.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  getVerticalSize(
+                  
                     50,
-                  ),
+                  
                 ))),
                 buttonTextStyle: theme.textTheme.titleSmall!,
               ),
               CustomElevatedButton(
                 text: "Back to Login".toUpperCase(),
-                margin: getMargin(
+                margin: EdgeInsets.only(
                   left: 8,
                   top: 15,
                   right: 8,
@@ -89,12 +83,13 @@ class SuccessfullyScreen extends StatelessWidget {
                 buttonStyle: CustomButtonStyles.fillPrimary.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  getVerticalSize(
+                  
                     50,
-                  ),
+                  
                 ))),
                 buttonTextStyle: theme.textTheme.titleSmall!,
               ),
+              const Spacer()
             ],
           ),
         ),

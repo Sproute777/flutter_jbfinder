@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 
 class LogoScreen extends StatelessWidget {
@@ -19,26 +20,19 @@ class LogoScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CustomImageView(
-                svgPath: ImageConstant.imgUser,
-                height: getSize(
+              SvgPicture.asset(
+                ImageConstant.imgUser,
+                height: 
                   60,
-                ),
-                width: getSize(
+                width: 
                   60,
-                ),
               ),
-              Padding(
-                padding: getPadding(
-                  top: 3,
-                  bottom: 2,
-                ),
-                child: Text(
-                  "Jobspot",
-                  overflow: TextOverflow.ellipsis,
-                  textAlign: TextAlign.left,
-                  style: theme.textTheme.headlineMedium,
-                ),
+              SizedBox(height: 2),
+              Text(
+                "Jobspot",
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.left,
+                style: theme.textTheme.headlineMedium,
               ),
             ],
           ),
