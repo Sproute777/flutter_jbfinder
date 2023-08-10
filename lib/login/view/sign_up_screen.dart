@@ -5,6 +5,8 @@ import 'package:jobfinder_figma_pro_v2/widgets/custom_checkbox_button.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_text_form_field.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 
+import '../../app/widgets/scroll_scaffold.dart';
+
 class SignUpScreen extends StatelessWidget {
   SignUpScreen({super.key});
 
@@ -18,18 +20,10 @@ class SignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      resizeToAvoidBottomInset: false,
-      backgroundColor: PrimaryColors.whiteA700,
-      body: SafeArea(
-        child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Container(
+    return ScrollScaffold(
+      body: Container(
             width: double.maxFinite,
-            padding: EdgeInsets.only(
-              left: 20,
-              top: 100,
-              right: 20,
+        padding: EdgeInsets.fromLTRB(20, 24, 20, 24
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -232,8 +226,7 @@ class SignUpScreen extends StatelessWidget {
               ],
             ),
           ),
-        ),
-      ),
+        
     );
   }
 }

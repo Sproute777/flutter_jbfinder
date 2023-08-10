@@ -4,6 +4,7 @@ import 'package:jobfinder_figma_pro_v2/widgets/custom_checkbox_button.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_text_form_field.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 
+import '../../app/widgets/scroll_scaffold.dart';
 import '../widgets/login_button.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -20,17 +21,13 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      resizeToAvoidBottomInset: false,
-      backgroundColor: PrimaryColors.whiteA700,
-      body: SafeArea(
-        child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Container(
+    return ScrollScaffold(
+      body: Container(
             width: double.maxFinite,
             padding: EdgeInsets.only(
-              left: 20,
-              top: 100,
+          left: 20,
+          top: 24,
+          bottom: 24,
               right: 20,
             ),
             child: Column(
@@ -205,8 +202,7 @@ class LoginScreen extends StatelessWidget {
               ],
             ),
           ),
-        ),
-      ),
+        
     );
   }
 }

@@ -4,6 +4,8 @@ import 'package:jobfinder_figma_pro_v2/login/widgets/login_button.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_text_form_field.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 
+import '../../app/widgets/scroll_scaffold.dart';
+
 class ForgotPasswordScreen extends StatelessWidget {
   ForgotPasswordScreen({Key? key})
       : super(
@@ -14,16 +16,15 @@ class ForgotPasswordScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: PrimaryColors.gray50,
-      resizeToAvoidBottomInset: false,
+    return ScrollScaffold(
       body: SafeArea(
         child: Container(
           width: double.maxFinite,
           padding: EdgeInsets.only(
             left: 20,
-            top: 92,
+            top: 24,
             right: 20,
+            bottom: 24,
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -34,12 +35,10 @@ class ForgotPasswordScreen extends StatelessWidget {
                 textAlign: TextAlign.left,
                 style: theme.textTheme.headlineLarge,
               ),
+              SizedBox(height: 10),
               Container(
-                width: 301,
+                width: 300,
                 margin: EdgeInsets.only(
-                  left: 17,
-                  top: 9,
-                  right: 16,
                 ),
                 child: Text(
                   "To reset your password, you need your email or mobile number that can be authenticated",

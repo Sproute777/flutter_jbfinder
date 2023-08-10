@@ -4,6 +4,8 @@ import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 import 'package:jobfinder_figma_pro_v2/widgets/custom_floating_button.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 
+import '../../app/widgets/scroll_scaffold.dart';
+
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key})
       : super(
@@ -12,32 +14,30 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: PrimaryColors.gray50,
-      body: SafeArea(
-        child: Container(
-          width: double.maxFinite,
-          padding: EdgeInsets.only(
-            left: 32,
-            top: 32,
-            right: 32,
-            bottom: 52,
-          ),
-          child: Column(
-            // mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Align(
-                alignment: Alignment.centerRight,
-                child: Text(
-                  "Jobspot",
-                  overflow: TextOverflow.ellipsis,
-                  textAlign: TextAlign.left,
-                  style: theme.textTheme.titleMedium,
-                ),
+    return ScrollScaffold(
+      body: Container(
+        width: double.maxFinite,
+        padding: EdgeInsets.only(
+          left: 32,
+          right: 32,
+        ),
+        child: Column(
+          // mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Align(
+              alignment: Alignment.centerRight,
+              child: Text(
+                "Jobspot",
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.left,
+                style: theme.textTheme.titleMedium,
               ),
-              Expanded(
+            ),
+            Center(
+              child: SizedBox(
+                height: 200,
                 child: SvgPicture.asset(
                   ImageConstant.imgGroup75,
                   fit: BoxFit.contain,
@@ -45,33 +45,33 @@ class SplashScreen extends StatelessWidget {
                   // width: 310,
                 ),
               ),
-              SizedBox(height: 78),
-              RichText(
-                text: TextSpan(
-                  children: [
-                    TextSpan(
-                      text: "Find Your ",
-                      style: theme.textTheme.displayMedium,
+            ),
+            SizedBox(height: 78),
+            RichText(
+              text: TextSpan(
+                children: [
+                  TextSpan(
+                    text: "Find Your\n",
+                    style: theme.textTheme.displayMedium,
+                  ),
+                  TextSpan(
+                    text: "Dream Job Here!",
+                    style: CustomTextStyles.displayMediumOrangeA200.copyWith(
+                      decoration: TextDecoration.underline,
                     ),
-                    TextSpan(
-                      text: "Dream Job Here!",
-                      style: CustomTextStyles.displayMediumOrangeA200.copyWith(
-                        decoration: TextDecoration.underline,
-                      ),
-                    ),
-                  ],
-                ),
-                textAlign: TextAlign.left,
+                  ),
+                ],
               ),
-              SizedBox(height: 15),
-              Text(
-                "Explore all the most exciting job roles basedon your interest and study major.",
-                overflow: TextOverflow.ellipsis,
-                textAlign: TextAlign.left,
-                style: theme.textTheme.bodyMedium,
-              ),
-            ],
-          ),
+              textAlign: TextAlign.left,
+            ),
+            SizedBox(height: 15),
+            Text(
+              "Explore all the most exciting job roles basedon your interest and study major.",
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.left,
+              style: theme.textTheme.bodyMedium,
+            ),
+          ],
         ),
       ),
       floatingActionButton: CustomFloatingButton(

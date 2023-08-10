@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 
+
 class LogoScreen extends StatelessWidget {
   const LogoScreen({Key? key})
       : super(
@@ -11,22 +12,20 @@ class LogoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    mediaQueryData = MediaQuery.of(context);
 
     return SafeArea(
       child: Scaffold(
         backgroundColor: PrimaryColors.indigo900,
-        body: SizedBox(
+        body: Container(
+          padding: EdgeInsets.fromLTRB(20, 24, 20, 24),
           width: double.maxFinite,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SvgPicture.asset(
                 ImageConstant.imgUser,
-                height: 
-                  60,
-                width: 
-                  60,
+                height: 60,
+                width: 60,
               ),
               SizedBox(height: 2),
               Text(
@@ -37,6 +36,7 @@ class LogoScreen extends StatelessWidget {
               ),
             ],
           ),
+          
         ),
       ),
     );
