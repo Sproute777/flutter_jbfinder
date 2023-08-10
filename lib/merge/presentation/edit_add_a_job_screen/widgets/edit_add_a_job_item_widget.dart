@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
+
+import '../../export.dart';
 
 // ignore: must_be_immutable
 class EditAddAJobItemWidget extends StatelessWidget {

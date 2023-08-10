@@ -10,6 +10,7 @@ import '../presentation/add_resume_vtwo_screen/add_resume_vtwo_screen.dart';
 import '../presentation/add_skill_one_screen/add_skill_one_screen.dart';
 import '../presentation/add_skill_screen/add_skill_screen.dart';
 import '../presentation/add_work_experience_screen/add_work_experience_screen.dart';
+import '../presentation/app_navigation_screen/app_navigation_screen.dart';
 import '../presentation/change_education_screen/change_education_screen.dart';
 import '../presentation/change_work_experience_screen/change_work_experience_screen.dart';
 import '../presentation/chat_screen/chat_screen.dart';
@@ -62,7 +63,6 @@ import '../presentation/upload_cv_one_screen/upload_cv_one_screen.dart';
 import '../presentation/upload_cv_screen/upload_cv_screen.dart';
 import '../presentation/upload_resume_screen/upload_resume_screen.dart';
 import '../presentation/your_application_screen/your_application_screen.dart';
-import '/presentation/app_navigation_screen/app_navigation_screen.dart';
 
 class AppRoutes {
   static const String homeScreen = '/home_screen';
@@ -270,7 +270,7 @@ class AppRoutes {
     addResumeVtwoScreen: (context) => AddResumeVtwoScreen(),
     settingsScreen: (context) => SettingsScreen(),
     updatePasswordScreen: (context) => UpdatePasswordScreen(),
-    logOutScreen: (context) => LogOutScreen(),
+    logOutScreen: (context) => LogoutScreen(),
     appNavigationScreen: (context) => AppNavigationScreen()
   };
 }

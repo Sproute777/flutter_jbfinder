@@ -1,6 +1,7 @@
 import '../edit_add_a_job_screen/widgets/edit_add_a_job_item_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
+
+import '../export.dart';
 
 class EditAddAJobScreen extends StatelessWidget {
   const EditAddAJobScreen({Key? key})

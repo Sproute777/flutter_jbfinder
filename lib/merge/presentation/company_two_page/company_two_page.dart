@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/widgets/custom_elevated_button.dart';
-import 'package:the_s_application4/widgets/custom_icon_button.dart';
+
+import '../export.dart';
 
 class CompanyTwoPage extends StatefulWidget {
   const CompanyTwoPage({Key? key}) : super(key: key);

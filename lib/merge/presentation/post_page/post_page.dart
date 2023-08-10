@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:readmore/readmore.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/widgets/custom_elevated_button.dart';
-import 'package:the_s_application4/widgets/custom_icon_button.dart';
-import 'package:the_s_application4/widgets/custom_radio_button.dart';
 
+import '../export.dart';
 // ignore_for_file: must_be_immutable
 class PostPage extends StatefulWidget {
   const PostPage({Key? key})
@@ -193,26 +189,26 @@ class PostPageState extends State<PostPage>
                                 ],
                               ),
                             ),
-                            Align(
-                              alignment: Alignment.center,
-                              child: Container(
-                                width: getHorizontalSize(
-                                  286,
-                                ),
-                                margin: getMargin(
-                                  top: 16,
-                                ),
-                                child: ReadMoreText(
-                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labo... ",
-                                  trimLines: 3,
-                                  colorClickableText: appTheme.orange400,
-                                  trimMode: TrimMode.Line,
-                                  trimCollapsedText: "Read more",
-                                  moreStyle: CustomTextStyles.bodySmallOpenSans,
-                                  lessStyle: CustomTextStyles.bodySmallOpenSans,
-                                ),
-                              ),
-                            ),
+                            // Align(
+                            //   alignment: Alignment.center,
+                            //   child: Container(
+                            //     width: getHorizontalSize(
+                            //       286,
+                            //     ),
+                            //     margin: getMargin(
+                            //       top: 16,
+                            //     ),
+                            //     child: ReadMoreText(
+                            //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labo... ",
+                            //       trimLines: 3,
+                            //       colorClickableText: appTheme.orange400,
+                            //       trimMode: TrimMode.Line,
+                            //       trimCollapsedText: "Read more",
+                            //       moreStyle: CustomTextStyles.bodySmallOpenSans,
+                            //       lessStyle: CustomTextStyles.bodySmallOpenSans,
+                            //     ),
+                            //   ),
+                            // ),
                             Container(
                               height: getVerticalSize(
                                 166,

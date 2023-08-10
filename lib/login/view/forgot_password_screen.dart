@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 import 'package:jobfinder_figma_pro_v2/login/widgets/login_button.dart';
 import 'package:jobfinder_figma_pro_v2/login/widgets/custom_text_form_field.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 
 import '../../app/widgets/scroll_scaffold.dart';
+import '../../core/utils/image_constant.dart';
+import '../../core/utils/size_utils.dart';
+import '../../theme/app_decoration.dart';
+import '../../theme/custom_text_style.dart';
+import '../../theme/theme_helper.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {
   ForgotPasswordScreen({Key? key})

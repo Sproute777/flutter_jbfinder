@@ -1,10 +1,9 @@
+import '../../routes/app_routes.dart';
+import '../export.dart';
 import '../my_connection_screen/widgets/my_connection_item_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/presentation/posting_page/posting_page.dart';
-import 'package:the_s_application4/widgets/custom_bottom_bar.dart';
-import 'package:the_s_application4/widgets/custom_elevated_button.dart';
 
+import '../posting_page/posting_page.dart';
 class MyConnectionScreen extends StatelessWidget {
   MyConnectionScreen({Key? key})
       : super(

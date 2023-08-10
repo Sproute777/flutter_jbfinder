@@ -1,7 +1,6 @@
+import '../export.dart';
 import '../posting_page/widgets/posting_item_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/widgets/custom_radio_button.dart';
 
 // ignore_for_file: must_be_immutable
 class PostingPage extends StatelessWidget {

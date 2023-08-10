@@ -1,8 +1,6 @@
+import '../export.dart';
 import '../jobs_page/widgets/jobs_item_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/widgets/custom_icon_button.dart';
-
 // ignore_for_file: must_be_immutable
 class JobsPage extends StatefulWidget {
   const JobsPage({Key? key})

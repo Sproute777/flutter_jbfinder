@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       title: 'the_s_application4',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.homeScreen,
+      initialRoute: AppRoutes.appNavigationScreen,
       routes: AppRoutes.routes,
     );
   }

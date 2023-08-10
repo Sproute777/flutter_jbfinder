@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/presentation/about_us_page/about_us_page.dart';
-import 'package:the_s_application4/presentation/jobs_page/jobs_page.dart';
-import 'package:the_s_application4/presentation/post_page/post_page.dart';
-import 'package:the_s_application4/widgets/custom_elevated_button.dart';
 
+import '../about_us_page/about_us_page.dart';
+import '../export.dart';
+import '../jobs_page/jobs_page.dart';
+import '../post_page/post_page.dart';
 class JobsTabContainerScreen extends StatefulWidget {
   const JobsTabContainerScreen({Key? key}) : super(key: key);
 

@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/widgets/custom_elevated_button.dart';
-import 'package:the_s_application4/widgets/custom_radio_button.dart';
-import 'package:the_s_application4/widgets/custom_switch.dart';
-import 'package:the_s_application4/widgets/custom_text_form_field.dart';
 
-// ignore_for_file: must_be_immutable
-class LogOutScreen extends StatelessWidget {
-  LogOutScreen({Key? key}) : super(key: key);
+import '../export.dart';
 
+class LogoutScreen extends StatelessWidget {
+  const LogoutScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
   bool isSelectedSwitch = false;
 
   TextEditingController passwordController = TextEditingController();
@@ -291,6 +292,5 @@ class LogOutScreen extends StatelessWidget {
   /// This function takes a [BuildContext] object as a parameter, which is used
   /// to navigate back to the previous screen.
   onTapImgArrowleft(BuildContext context) {
-    Navigator.pop(context);
-  }
+  Navigator.pop(context);
 }

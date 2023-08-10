@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/widgets/app_bar/appbar_image.dart';
-import 'package:the_s_application4/widgets/app_bar/custom_app_bar.dart';
-import 'package:the_s_application4/widgets/custom_elevated_button.dart';
 
+import '../export.dart';
 class DescriptionOneScreen extends StatelessWidget {
   const DescriptionOneScreen({Key? key}) : super(key: key);
 

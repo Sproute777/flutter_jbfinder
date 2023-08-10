@@ -1,6 +1,6 @@
+import '../export.dart';
 import '../notifications_two_screen/widgets/notifications2_item_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
 
 class NotificationsTwoScreen extends StatelessWidget {
   const NotificationsTwoScreen({Key? key})

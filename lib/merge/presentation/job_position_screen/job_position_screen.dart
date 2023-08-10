@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/widgets/custom_search_view.dart';
+
+import '../export.dart';
 
 // ignore_for_file: must_be_immutable
 class JobPositionScreen extends StatelessWidget {

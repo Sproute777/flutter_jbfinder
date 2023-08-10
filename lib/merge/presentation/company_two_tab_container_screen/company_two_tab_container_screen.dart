@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/presentation/company_two_page/company_two_page.dart';
-import 'package:the_s_application4/widgets/app_bar/appbar_image.dart';
-import 'package:the_s_application4/widgets/app_bar/custom_app_bar.dart';
+
+import '../company_two_page/company_two_page.dart';
+import '../export.dart';
 
 class CompanyTwoTabContainerScreen extends StatefulWidget {
   const CompanyTwoTabContainerScreen({Key? key}) : super(key: key);

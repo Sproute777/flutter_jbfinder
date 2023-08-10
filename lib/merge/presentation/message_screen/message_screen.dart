@@ -1,9 +1,10 @@
+import '../../routes/app_routes.dart';
+import '../export.dart';
 import '../message_screen/widgets/listellipsefort_item_widget.dart';
 import '../message_screen/widgets/listsearch_item_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/presentation/posting_page/posting_page.dart';
-import 'package:the_s_application4/widgets/custom_bottom_bar.dart';
+
+import '../posting_page/posting_page.dart';
 
 class MessageScreen extends StatelessWidget {
   MessageScreen({Key? key})

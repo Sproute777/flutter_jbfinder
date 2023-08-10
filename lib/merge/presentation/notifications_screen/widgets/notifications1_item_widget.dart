@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/widgets/custom_icon_button.dart';
-import 'package:the_s_application4/widgets/custom_outlined_button.dart';
-import 'package:the_s_application4/widgets/custom_radio_button.dart';
 
+import '../../export.dart';
 // ignore: must_be_immutable
 class Notifications1ItemWidget extends StatelessWidget {
   Notifications1ItemWidget({Key? key})

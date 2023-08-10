@@ -1,13 +1,11 @@
+import '../../core/utils/image_constant.dart';
+import '../../routes/app_routes.dart';
+import '../../theme/theme_helper.dart';
 import '../creat_job_or_post_screen/widgets/creat_job_or_item_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/presentation/posting_page/posting_page.dart';
-import 'package:the_s_application4/widgets/app_bar/appbar_image.dart';
-import 'package:the_s_application4/widgets/app_bar/custom_app_bar.dart';
-import 'package:the_s_application4/widgets/custom_bottom_bar.dart';
-import 'package:the_s_application4/widgets/custom_elevated_button.dart';
-import 'package:the_s_application4/widgets/custom_icon_button.dart';
-import 'package:the_s_application4/widgets/custom_search_view.dart';
+
+import '../export.dart';
+import '../posting_page/posting_page.dart';
 
 class CreatJobOrPostScreen extends StatelessWidget {
   CreatJobOrPostScreen({Key? key})
@@ -21,7 +19,6 @@ class CreatJobOrPostScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    mediaQueryData = MediaQuery.of(context);
 
     return SafeArea(
       child: Scaffold(

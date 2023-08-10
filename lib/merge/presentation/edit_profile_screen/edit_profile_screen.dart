@@ -1,12 +1,10 @@
+import '../../routes/app_routes.dart';
 import '../edit_profile_screen/widgets/chipviewleaders_item_widget.dart';
 import '../edit_profile_screen/widgets/edit_profile_item_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/presentation/posting_page/posting_page.dart';
-import 'package:the_s_application4/widgets/app_bar/appbar_image.dart';
-import 'package:the_s_application4/widgets/app_bar/custom_app_bar.dart';
-import 'package:the_s_application4/widgets/custom_bottom_bar.dart';
-import 'package:the_s_application4/widgets/custom_elevated_button.dart';
+
+import '../export.dart';
+import '../posting_page/posting_page.dart';
 
 class EditProfileScreen extends StatelessWidget {
   EditProfileScreen({Key? key})

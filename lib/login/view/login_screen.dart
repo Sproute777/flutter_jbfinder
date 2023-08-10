@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 import 'package:jobfinder_figma_pro_v2/login/widgets/login_checkbox.dart';
 import 'package:jobfinder_figma_pro_v2/login/widgets/custom_text_form_field.dart';
 import 'package:jobfinder_ui/jobfinder_ui.dart';
 
 import '../../app/widgets/scroll_scaffold.dart';
+import '../../core/utils/image_constant.dart';
+import '../../theme/custom_text_style.dart';
+import '../../theme/theme_helper.dart';
 import '../widgets/login_button.dart';
 
 class LoginScreen extends StatelessWidget {

@@ -1,6 +1,6 @@
+import '../../export.dart';
 import 'chipviewenglish1_item_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
 
 // ignore: must_be_immutable
 class EditProfileItemWidget extends StatelessWidget {

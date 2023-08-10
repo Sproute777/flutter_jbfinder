@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
+
+import '../export.dart';
 
 class NoNotificationsScreen extends StatelessWidget {
   const NoNotificationsScreen({Key? key}) : super(key: key);

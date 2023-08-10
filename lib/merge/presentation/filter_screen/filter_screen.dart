@@ -1,11 +1,7 @@
+import '../export.dart';
 import '../filter_screen/widgets/chipviewfulltim2_item_widget.dart';
 import '../filter_screen/widgets/chipviewfulltim_item_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/widgets/custom_checkbox_button.dart';
-import 'package:the_s_application4/widgets/custom_elevated_button.dart';
-import 'package:the_s_application4/widgets/custom_radio_button.dart';
-
 // ignore_for_file: must_be_immutable
 class FilterScreen extends StatelessWidget {
   FilterScreen({Key? key}) : super(key: key);

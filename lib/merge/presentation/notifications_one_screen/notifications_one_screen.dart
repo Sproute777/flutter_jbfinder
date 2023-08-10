@@ -1,6 +1,6 @@
+import '../export.dart';
 import '../notifications_one_screen/widgets/notifications_item_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
 
 class NotificationsOneScreen extends StatelessWidget {
   const NotificationsOneScreen({Key? key})

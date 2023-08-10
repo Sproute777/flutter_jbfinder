@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/presentation/posting_page/posting_page.dart';
-import 'package:the_s_application4/widgets/custom_bottom_bar.dart';
 
+import '../../routes/app_routes.dart';
+import '../export.dart';
+import '../posting_page/posting_page.dart';
 // ignore_for_file: must_be_immutable
 class PostingContainerScreen extends StatelessWidget {
   PostingContainerScreen({Key? key}) : super(key: key);

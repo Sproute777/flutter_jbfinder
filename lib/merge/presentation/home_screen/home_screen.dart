@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/presentation/posting_page/posting_page.dart';
-import 'package:the_s_application4/widgets/custom_bottom_bar.dart';
-import 'package:the_s_application4/widgets/custom_elevated_button.dart';
-import 'package:the_s_application4/widgets/custom_icon_button.dart';
-import 'package:the_s_application4/widgets/custom_text_form_field.dart';
+
+import '../../routes/app_routes.dart';
+import '../export.dart';
+import '../posting_page/posting_page.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key})

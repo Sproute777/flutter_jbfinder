@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
+
+import '../../core/utils/size_utils.dart';
 
 class CustomTextFormField extends StatelessWidget {
   CustomTextFormField({

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:the_s_application4/core/app_export.dart';
-import 'package:the_s_application4/presentation/post_page/post_page.dart';
+
+import '../export.dart';
+import '../post_page/post_page.dart';
 
 class PostTabContainerScreen extends StatefulWidget {
   const PostTabContainerScreen({Key? key}) : super(key: key);
