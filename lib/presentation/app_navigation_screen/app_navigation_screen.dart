@@ -9,7 +9,7 @@ class AppNavigationScreen extends StatelessWidget {
     mediaQueryData = MediaQuery.of(context);
     return SafeArea(
         child: Scaffold(
-            backgroundColor: appTheme.whiteA700,
+        backgroundColor: PrimaryColors.whiteA700,
             body: SizedBox(
                 width: double.maxFinite,
                 child: Column(
@@ -46,7 +46,7 @@ class AppNavigationScreen extends StatelessWidget {
                                             overflow: TextOverflow.ellipsis,
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
-                                                color: appTheme.blueGray400,
+                                        color: PrimaryColors.blueGray400,
                                                 fontSize: getFontSize(16),
                                                 fontFamily: 'Roboto',
                                                 fontWeight: FontWeight.w400)))),
@@ -115,7 +115,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                               thickness:
                                                                   getVerticalSize(
                                                                       1),
-                                                              color: appTheme
+                                              color: PrimaryColors
                                                                   .blueGray400))
                                                     ]))),
                                         GestureDetector(
@@ -167,7 +167,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                               thickness:
                                                                   getVerticalSize(
                                                                       1),
-                                                              color: appTheme
+                                              color: PrimaryColors
                                                                   .blueGray400))
                                                     ]))),
                                         GestureDetector(
@@ -219,7 +219,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                               thickness:
                                                                   getVerticalSize(
                                                                       1),
-                                                              color: appTheme
+                                              color: PrimaryColors
                                                                   .blueGray400))
                                                     ]))),
                                         GestureDetector(
@@ -271,7 +271,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                               thickness:
                                                                   getVerticalSize(
                                                                       1),
-                                                              color: appTheme
+                                              color: PrimaryColors
                                                                   .blueGray400))
                                                     ]))),
                                         GestureDetector(
@@ -323,7 +323,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                               thickness:
                                                                   getVerticalSize(
                                                                       1),
-                                                              color: appTheme
+                                              color: PrimaryColors
                                                                   .blueGray400))
                                                     ]))),
                                         GestureDetector(
@@ -375,7 +375,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                               thickness:
                                                                   getVerticalSize(
                                                                       1),
-                                                              color: appTheme
+                                              color: PrimaryColors
                                                                   .blueGray400))
                                                     ]))),
                                         GestureDetector(
@@ -427,11 +427,22 @@ class AppNavigationScreen extends StatelessWidget {
                                                               thickness:
                                                                   getVerticalSize(
                                                                       1),
-                                                              color: appTheme
+                                        color: PrimaryColors
                                                                   .blueGray400))
-                                                    ])))
-                                      ]))))
-                    ]))));
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
   /// Navigates to the logoScreen when the action is triggered.

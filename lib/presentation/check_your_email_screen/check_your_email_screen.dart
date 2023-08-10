@@ -5,7 +5,7 @@ import 'package:jobfinder_figma_pro_v2/widgets/custom_elevated_button.dart';
 class CheckYourEmailScreen extends StatelessWidget {
   const CheckYourEmailScreen({Key? key})
       : super(
-          key: key,
+          key: key
         );
 
   @override
@@ -14,7 +14,7 @@ class CheckYourEmailScreen extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
-        backgroundColor: appTheme.gray50,
+        backgroundColor: PrimaryColors.gray50,
         body: Container(
           width: double.maxFinite,
           padding: EdgeInsets.only(
@@ -32,7 +32,7 @@ class CheckYourEmailScreen extends StatelessWidget {
                 style: theme.textTheme.headlineLarge,
               ),
               Container(
-                width: 301,
+                width: 300,
                 margin: EdgeInsets.only(
                   left: 9,
                   top: 8,
@@ -71,9 +71,8 @@ class CheckYourEmailScreen extends StatelessWidget {
                 buttonStyle: CustomButtonStyles.outlineIndigo2002d.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  
-                  50,
-                ))),
+                  50)),
+                ),
                 buttonTextStyle: theme.textTheme.titleSmall!,
               ),
               CustomElevatedButton(
@@ -84,10 +83,9 @@ class CheckYourEmailScreen extends StatelessWidget {
                 buttonStyle: CustomButtonStyles.fillPrimary.copyWith(
                     fixedSize: MaterialStateProperty.all<Size>(Size(
                   double.maxFinite,
-                  
-                    50,
-                  
-                ))),
+                      50),
+                  ),
+                ),
                 buttonTextStyle: theme.textTheme.titleSmall!,
               ),
               Padding(

@@ -53,7 +53,7 @@ class CustomFloatingButton extends StatelessWidget {
             height: getSize(height ?? 0),
             decoration: decoration ??
                 BoxDecoration(
-                  color: appTheme.indigo900,
+                  color: PrimaryColors.indigo900,
                   borderRadius: BorderRadius.circular(
                     getHorizontalSize(
                       30.00,

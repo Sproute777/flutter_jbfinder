@@ -13,7 +13,7 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      backgroundColor: appTheme.gray50,
+      backgroundColor: PrimaryColors.gray50,
       body: SafeArea(
         child: Container(
           width: double.maxFinite,
@@ -77,7 +77,7 @@ class SplashScreen extends StatelessWidget {
       floatingActionButton: CustomFloatingButton(
         height: 60,
         width: 60,
-        backgroundColor: appTheme.indigo900,
+        backgroundColor: PrimaryColors.indigo900,
         child: CustomImageView(
           svgPath: ImageConstant.imgArrowright,
           height: 30.0,

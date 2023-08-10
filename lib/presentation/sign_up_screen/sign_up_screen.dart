@@ -20,7 +20,7 @@ class SignUpScreen extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
-        backgroundColor: appTheme.gray50,
+        backgroundColor: PrimaryColors.gray50,
         resizeToAvoidBottomInset: false,
         body: Container(
           width: double.maxFinite,
@@ -88,7 +88,7 @@ class SignUpScreen extends StatelessWidget {
                 hintStyle: theme.textTheme.bodySmall!,
                 textInputAction: TextInputAction.next,
                 filled: true,
-                fillColor: appTheme.whiteA700,
+                fillColor: PrimaryColors.whiteA700,
               ),
               Align(
                 alignment: Alignment.centerLeft,
@@ -121,7 +121,7 @@ class SignUpScreen extends StatelessWidget {
                 hintStyle: theme.textTheme.bodySmall!,
                 textInputAction: TextInputAction.next,
                 filled: true,
-                fillColor: appTheme.whiteA700,
+                fillColor: PrimaryColors.whiteA700,
               ),
               Align(
                 alignment: Alignment.centerLeft,
@@ -159,7 +159,7 @@ class SignUpScreen extends StatelessWidget {
                 ),
                 obscureText: true,
                 filled: true,
-                fillColor: appTheme.whiteA700,
+                fillColor: PrimaryColors.whiteA700,
               ),
               Padding(
                 padding: EdgeInsets.only(

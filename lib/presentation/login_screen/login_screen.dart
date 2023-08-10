@@ -21,14 +21,14 @@ class LoginScreen extends StatelessWidget {
 
     return Scaffold(
       resizeToAvoidBottomInset: false,
-        backgroundColor: appTheme.whiteA700,
+      backgroundColor: PrimaryColors.whiteA700,
       body: SafeArea(
         child: Container(
           width: double.maxFinite,
           padding: EdgeInsets.only(
-            left: 21,
-            top: 101,
-            right: 21,
+            left: 20,
+            top: 100,
+            right: 20,
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -87,7 +87,7 @@ class LoginScreen extends StatelessWidget {
                 hintStyle: theme.textTheme.bodySmall!,
                 textInputAction: TextInputAction.next,
                 filled: true,
-                fillColor: appTheme.whiteA700,
+                fillColor: PrimaryColors.whiteA700,
               ),
               Align(
                 alignment: Alignment.centerLeft,
@@ -127,7 +127,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 obscureText: true,
                 filled: true,
-                fillColor: appTheme.whiteA700,
+                fillColor: PrimaryColors.whiteA700,
               ),
               Padding(
                 padding: EdgeInsets.only(
@@ -165,21 +165,28 @@ class LoginScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              CustomElevatedButton(
-                text: "Login".toUpperCase(),
-                margin: EdgeInsets.only(
+              Padding(
+                padding: EdgeInsets.only(
                   left: 36,
                   top: 32,
                   right: 31,
                 ),
-                buttonStyle: CustomButtonStyles.outlineIndigo2002d.copyWith(
-                    fixedSize: MaterialStateProperty.all<Size>(Size(
-                  double.maxFinite,
-                  
-                    50,
-                  
-                ))),
-                buttonTextStyle: theme.textTheme.titleSmall!,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: PrimaryColors.indigo900,
+                    textStyle: theme.textTheme.titleSmall!,
+                    minimumSize: Size(double.maxFinite, 50.0),
+                  ),
+                  child: Text("Login".toUpperCase()),
+                  // buttonStyle: CustomButtonStyles.outlineIndigo2002d.copyWith(
+                  //     fixedSize: MaterialStateProperty.all<Size>(Size(
+                  //   double.maxFinite,
+                    
+                  //     50,
+                    
+                  // ))),
+                  onPressed: () {},
+                ),
               ),
               CustomElevatedButton(
                 text: "Sign in with Google".toUpperCase(),

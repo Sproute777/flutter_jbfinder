@@ -14,7 +14,7 @@ class LogoScreen extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
-        backgroundColor: appTheme.indigo900,
+        backgroundColor: PrimaryColors.indigo900,
         body: SizedBox(
           width: double.maxFinite,
           child: Column(

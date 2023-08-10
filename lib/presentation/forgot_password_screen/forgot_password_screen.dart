@@ -15,7 +15,7 @@ class ForgotPasswordScreen extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      backgroundColor: appTheme.gray50,
+      backgroundColor: PrimaryColors.gray50,
       resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Container(
@@ -66,7 +66,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                         margin: EdgeInsets.only(
                           left: 13,
                         ),
-                        color: appTheme.indigo900,
+                        color: PrimaryColors.indigo900,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadiusStyle.circleBorder41,
                         ),
@@ -105,7 +105,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                                       
                                     ),
                                     border: Border.all(
-                                      color: appTheme.whiteA700,
+                                      color: PrimaryColors.whiteA700,
                                       width: 5,
                                     ),
                                   ),
@@ -256,7 +256,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                 hintText: "Brandonelouis@gmail.com ",
                 hintStyle: theme.textTheme.bodySmall!,
                 filled: true,
-                fillColor: appTheme.whiteA700,
+                fillColor: PrimaryColors.whiteA700,
                 defaultBorderDecoration:
                     TextFormFieldStyleHelper.outlineIndigo2002dTL6,
                 enabledBorderDecoration:

@@ -3,16 +3,16 @@ import 'package:jobfinder_figma_pro_v2/core/app_export.dart';
 
 class AppDecoration {
   static BoxDecoration get fill => BoxDecoration(
-        color: appTheme.indigo900,
+        color: PrimaryColors.indigo900,
       );
   static BoxDecoration get fill1 => BoxDecoration(
-        color: appTheme.gray50,
+        color: PrimaryColors.gray50,
       );
   static BoxDecoration get fill3 => BoxDecoration(
         color: theme.colorScheme.errorContainer,
       );
   static BoxDecoration get fill2 => BoxDecoration(
-        color: appTheme.whiteA700,
+        color: PrimaryColors.whiteA700,
       );
 }
 

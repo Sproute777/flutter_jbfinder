@@ -15,13 +15,13 @@ class CustomButtonStyles {
       );
   // Outline button style
   static ButtonStyle get outlineIndigo2002d => ElevatedButton.styleFrom(
-        backgroundColor: appTheme.indigo900,
+        backgroundColor: PrimaryColors.indigo900,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(
             6,
           ),
         ),
-        shadowColor: appTheme.indigo2002d,
+        shadowColor: PrimaryColors.indigo2002d,
         elevation: 4,
       );
   // text button style

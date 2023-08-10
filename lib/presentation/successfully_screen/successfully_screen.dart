@@ -14,7 +14,7 @@ class SuccessfullyScreen extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
-        backgroundColor: appTheme.gray50,
+        backgroundColor: PrimaryColors.gray50,
         body: Container(
           width: double.maxFinite,
           padding: EdgeInsets.only(

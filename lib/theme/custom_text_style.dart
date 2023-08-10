@@ -8,30 +8,30 @@ import '../core/app_export.dart';
 class CustomTextStyles {
   // Body text style
   static get bodySmallBluegray700_1 => theme.textTheme.bodySmall!.copyWith(
-        color: appTheme.blueGray700,
+        color: PrimaryColors.blueGray700,
       );
   static get bodySmallGray90001 => theme.textTheme.bodySmall!.copyWith(
-        color: appTheme.gray90001,
+        color: PrimaryColors.gray90001,
       );
   static get bodySmallErrorContainer => theme.textTheme.bodySmall!.copyWith(
         color: theme.colorScheme.errorContainer,
       );
   static get bodySmallBluegray700 => theme.textTheme.bodySmall!.copyWith(
-        color: appTheme.blueGray700,
+        color: PrimaryColors.blueGray700,
       );
   static get bodySmallBluegray300 => theme.textTheme.bodySmall!.copyWith(
-        color: appTheme.blueGray300,
+        color: PrimaryColors.blueGray300,
       );
   static get bodySmallOpenSansGray900 =>
       theme.textTheme.bodySmall!.openSans.copyWith(
-        color: appTheme.gray900,
+        color: PrimaryColors.gray900,
       );
   static get bodySmallGray900 => theme.textTheme.bodySmall!.copyWith(
-        color: appTheme.gray900,
+        color: PrimaryColors.gray900,
       );
   static get bodySmallOpenSansBluegray700 =>
       theme.textTheme.bodySmall!.openSans.copyWith(
-        color: appTheme.blueGray700,
+        color: PrimaryColors.blueGray700,
       );
   // Label text style
   static get labelLargeOpenSans =>
@@ -39,15 +39,15 @@ class CustomTextStyles {
         fontWeight: FontWeight.w600,
       );
   static get labelLargeGray900 => theme.textTheme.labelLarge!.copyWith(
-        color: appTheme.gray900,
+        color: PrimaryColors.gray900,
       );
   // Title text style
   static get titleSmallIndigo900 => theme.textTheme.titleSmall!.copyWith(
-        color: appTheme.indigo900,
+        color: PrimaryColors.indigo900,
       );
   // Display text style
   static get displayMediumOrangeA200 => theme.textTheme.displayMedium!.copyWith(
-        color: appTheme.orangeA200,
+        color: PrimaryColors.orangeA200,
       );
 }
 
